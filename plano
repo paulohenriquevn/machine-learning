@@ -1,6 +1,6 @@
 # **Plano de Estudos de Matemática para Machine Learning (Foco Prático)**
 
-Este documento foca nos conceitos matemáticos essenciais para Machine Learning, explicados de forma detalhada para engenheiros de software. O objetivo é aprender de maneira clara, com exemplos práticos e aplicáveis no dia a dia de ML.
+Este documento foca nos conceitos matemáticos essenciais para Machine Learning, explicados de forma detalhada para engenheiros de software. O objetivo é aprender de maneira clara, com exemplos práticos e aplicáveis no dia a dia de ML. Além disso, foram adicionados exercícios específicos para reforçar o aprendizado.
 
 ---
 
@@ -22,6 +22,11 @@ As operações básicas da matemática são a base para manipulação de equaç�
 
 📌 **Exemplo Prático:** Transformação logarítmica de variáveis para normalizar distribuições enviesadas e melhorar modelos preditivos.
 
+📝 **Exercícios:**
+1. Calcule o valor de \( 2^3 \times 2^5 \) e interprete o resultado.
+2. Resolva \( \log_2 32 \) e explique o conceito aplicado.
+3. Converta um conjunto de dados numéricos para escala logarítmica utilizando NumPy.
+
 ### **1.2 Funções e Gráficos**
 - **Função Exponencial:** \( f(x) = a^x \)
   - Crescimento acelerado, comum em funções de ativação como ReLU e softmax.
@@ -31,6 +36,11 @@ As operações básicas da matemática são a base para manipulação de equaç�
   - Base para regressão polinomial e ajuste de curvas.
 
 📌 **Exemplo Prático:** Plotar gráficos dessas funções com Matplotlib para entender seu comportamento no ajuste de modelos.
+
+📝 **Exercícios:**
+1. Plote uma função exponencial \( f(x) = 2^x \) usando Matplotlib.
+2. Gere uma função polinomial de grau 2 e visualize seu gráfico.
+3. Utilize a transformação logarítmica para melhorar a visualização de um dataset com valores muito dispersos.
 
 ---
 
@@ -43,22 +53,23 @@ As operações básicas da matemática são a base para manipulação de equaç�
 
 📌 **Exemplo Prático:** Implementar um classificador Naïve Bayes para analisar textos e prever categorias.
 
+📝 **Exercícios:**
+1. Calcule a probabilidade de tirar um número ímpar ao lançar um dado.
+2. Resolva \( P(A|B) \) para eventos em um dataset real.
+3. Escreva um código para calcular probabilidades condicionalmente em Pandas.
+
 ### **2.2 Distribuições de Probabilidade**
 - **Distribuição Normal:** Modela dados com comportamento simétrico, usada em modelos estatísticos.
 - **Distribuição Bernoulli:** Modela eventos binários (0 ou 1), útil para classificação binária.
-- **Distribuição Binomial:** Probabilidade de sucesso em múltiplas tentativas (exemplo: taxa de conversão de anúncios).
-- **Distribuição Poisson:** Modela eventos raros (exemplo: falhas em sistemas, chamados de suporte).
+- **Distribuição Binomial:** Probabilidade de sucesso em múltiplas tentativas.
+- **Distribuição Poisson:** Modela eventos raros.
 
-📌 **Exemplo Prático:** Gerar distribuições com NumPy e visualizar com Seaborn para verificar a forma dos dados.
+📌 **Exemplo Prático:** Gerar distribuições com NumPy e visualizar com Seaborn.
 
-### **2.3 Estatística Descritiva**
-- **Média:** \( \mu = \frac{\sum x_i}{n} \)
-- **Mediana:** Valor central dos dados ordenados.
-- **Moda:** Valor mais frequente.
-- **Variância e Desvio Padrão:** Medem dispersão e variabilidade dos dados.
-- **Correlação e Covariância:** Identificam relação entre variáveis.
-
-📌 **Exemplo Prático:** Analisar correlação entre variáveis de um dataset usando Pandas.
+📝 **Exercícios:**
+1. Gere uma distribuição normal usando NumPy.
+2. Plote uma distribuição binomial com diferentes probabilidades.
+3. Simule uma distribuição Poisson e interprete seus resultados.
 
 ---
 
@@ -71,11 +82,10 @@ As operações básicas da matemática são a base para manipulação de equaç�
 
 📌 **Exemplo Prático:** Implementar descida do gradiente para ajustar pesos de um modelo de regressão linear.
 
-### **3.2 Integrais**
-- **Área sob a curva:** Importante para entender distribuições de probabilidade.
-- **Usado em ML:** Cálculo da AUC (Área sob a Curva ROC) para avaliar classificadores.
-
-📌 **Exemplo Prático:** Calcular integral de funções de densidade de probabilidade com SymPy.
+📝 **Exercícios:**
+1. Calcule a derivada de \( f(x) = x^2 + 3x \).
+2. Implemente a descida do gradiente para minimizar uma função de custo.
+3. Visualize graficamente o gradiente de uma função em 3D.
 
 ---
 
@@ -87,26 +97,18 @@ As operações básicas da matemática são a base para manipulação de equaç�
 - **Transposta de uma Matriz**
 - **Matriz Identidade e Inversa**
 
-📌 **Exemplo Prático:** Implementar operações básicas com NumPy e visualizar transformações em imagens.
+📌 **Exemplo Prático:** Implementar operações básicas com NumPy.
 
-### **4.2 Autovalores e Autovetores**
-- **Definição:** \( Ax = \lambda x \)
-- **Usado em ML:** Redução de dimensionalidade (PCA, SVD).
-
-📌 **Exemplo Prático:** Aplicar PCA em um dataset para reduzir dimensões e melhorar desempenho de modelos.
-
-### **4.3 Produto Escalar e Vetorial**
-- **Produto Escalar:** \( a \cdot b = \sum a_i b_i \)
-- **Produto Vetorial:** Gera um novo vetor ortogonal.
-- **Usado em ML:** Cálculo de similaridade entre vetores (Exemplo: Cosine Similarity em NLP).
-
-📌 **Exemplo Prático:** Implementar cálculo de similaridade do cosseno com Scikit-learn para comparação de textos.
+📝 **Exercícios:**
+1. Crie e multiplique duas matrizes em NumPy.
+2. Encontre a inversa de uma matriz quadrada.
+3. Resolva um sistema de equações lineares usando álgebra matricial.
 
 ---
 
 ## **Conclusão**
 
-Este plano cobre o essencial de matemática para ML de maneira aprofundada. A abordagem prioriza conceitos aplicados, com exercícios práticos.
+Este plano cobre o essencial de matemática para ML de maneira aprofundada, agora com exercícios específicos para reforçar o aprendizado. A abordagem prioriza conceitos aplicados, com exercícios práticos e implementação em código.
 
 🔗 **Dicas de Estudo:**
 - Resolver problemas reais (Kaggle, datasets públicos)
