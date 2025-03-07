@@ -1,0 +1,117 @@
+# **Plano de Estudos de Matemática para Machine Learning (Foco Prático)**
+
+Este documento foca nos conceitos matemáticos essenciais para Machine Learning, explicados de forma detalhada para engenheiros de software. O objetivo é aprender de maneira clara, com exemplos práticos e aplicáveis no dia a dia de ML.
+
+---
+
+## **1. Álgebra e Aritmética (Fundamentos Necessários)**
+### **1.1 Operações Básicas e Propriedades**
+As operações básicas da matemática são a base para manipulação de equações e fórmulas em Machine Learning.
+
+- **Soma, Subtração, Multiplicação e Divisão** → Utilizadas para manipulação de funções matemáticas e normalização de dados.
+- **Propriedades de Expoentes:**
+  - \( a^m \times a^n = a^{m+n} \) → Multiplicação de potências com mesma base.
+  - \( \frac{a^m}{a^n} = a^{m-n} \) → Divisão de potências com mesma base.
+  - \( (a^m)^n = a^{m \times n} \) → Potência de potência.
+  - **Usado em ML:** Normalização de dados, cálculo de funções exponenciais em redes neurais e softmax.
+- **Logaritmos:**
+  - \( \log(a \times b) = \log a + \log b \)
+  - \( \log \frac{a}{b} = \log a - \log b \)
+  - \( \log a^n = n \log a \)
+  - **Usado em ML:** Escalonamento logarítmico de variáveis, cálculo de perda logarítmica em regressão logística.
+
+📌 **Exemplo Prático:** Transformação logarítmica de variáveis para normalizar distribuições enviesadas e melhorar modelos preditivos.
+
+### **1.2 Funções e Gráficos**
+- **Função Exponencial:** \( f(x) = a^x \)
+  - Crescimento acelerado, comum em funções de ativação como ReLU e softmax.
+- **Função Logarítmica:** \( f(x) = \log x \)
+  - Inversa da exponencial, usada para estabilização de variáveis e interpretação de escalas.
+- **Funções Polinomiais:** \( f(x) = ax^2 + bx + c \)
+  - Base para regressão polinomial e ajuste de curvas.
+
+📌 **Exemplo Prático:** Plotar gráficos dessas funções com Matplotlib para entender seu comportamento no ajuste de modelos.
+
+---
+
+## **2. Probabilidade e Estatística (Essencial para ML)**
+
+### **2.1 Probabilidade Básica**
+- **Probabilidade de um evento:** \( P(A) = \frac{\text{Casos Favoráveis}}{\text{Casos Possíveis}} \)
+- **Probabilidade Condicional:** \( P(A|B) = \frac{P(A \cap B)}{P(B)} \)
+  - **Usado em ML:** Algoritmos bayesianos como Naïve Bayes para classificação baseada em probabilidades.
+
+📌 **Exemplo Prático:** Implementar um classificador Naïve Bayes para analisar textos e prever categorias.
+
+### **2.2 Distribuições de Probabilidade**
+- **Distribuição Normal:** Modela dados com comportamento simétrico, usada em modelos estatísticos.
+- **Distribuição Bernoulli:** Modela eventos binários (0 ou 1), útil para classificação binária.
+- **Distribuição Binomial:** Probabilidade de sucesso em múltiplas tentativas (exemplo: taxa de conversão de anúncios).
+- **Distribuição Poisson:** Modela eventos raros (exemplo: falhas em sistemas, chamados de suporte).
+
+📌 **Exemplo Prático:** Gerar distribuições com NumPy e visualizar com Seaborn para verificar a forma dos dados.
+
+### **2.3 Estatística Descritiva**
+- **Média:** \( \mu = \frac{\sum x_i}{n} \)
+- **Mediana:** Valor central dos dados ordenados.
+- **Moda:** Valor mais frequente.
+- **Variância e Desvio Padrão:** Medem dispersão e variabilidade dos dados.
+- **Correlação e Covariância:** Identificam relação entre variáveis.
+
+📌 **Exemplo Prático:** Analisar correlação entre variáveis de um dataset usando Pandas.
+
+---
+
+## **3. Cálculo Diferencial e Integral (Otimização de Modelos)**
+
+### **3.1 Derivadas e Gradiente**
+- **Derivada:** Taxa de variação instantânea.
+- **Gradiente:** Vetor de derivadas parciais usado para otimização.
+- **Descida do Gradiente:** Algoritmo para minimizar funções de erro em modelos de ML.
+
+📌 **Exemplo Prático:** Implementar descida do gradiente para ajustar pesos de um modelo de regressão linear.
+
+### **3.2 Integrais**
+- **Área sob a curva:** Importante para entender distribuições de probabilidade.
+- **Usado em ML:** Cálculo da AUC (Área sob a Curva ROC) para avaliar classificadores.
+
+📌 **Exemplo Prático:** Calcular integral de funções de densidade de probabilidade com SymPy.
+
+---
+
+## **4. Álgebra Linear (Núcleo do Machine Learning)**
+
+### **4.1 Matrizes e Operações**
+- **Soma e Multiplicação de Matrizes**
+- **Multiplicação por Escalar**
+- **Transposta de uma Matriz**
+- **Matriz Identidade e Inversa**
+
+📌 **Exemplo Prático:** Implementar operações básicas com NumPy e visualizar transformações em imagens.
+
+### **4.2 Autovalores e Autovetores**
+- **Definição:** \( Ax = \lambda x \)
+- **Usado em ML:** Redução de dimensionalidade (PCA, SVD).
+
+📌 **Exemplo Prático:** Aplicar PCA em um dataset para reduzir dimensões e melhorar desempenho de modelos.
+
+### **4.3 Produto Escalar e Vetorial**
+- **Produto Escalar:** \( a \cdot b = \sum a_i b_i \)
+- **Produto Vetorial:** Gera um novo vetor ortogonal.
+- **Usado em ML:** Cálculo de similaridade entre vetores (Exemplo: Cosine Similarity em NLP).
+
+📌 **Exemplo Prático:** Implementar cálculo de similaridade do cosseno com Scikit-learn para comparação de textos.
+
+---
+
+## **Conclusão**
+
+Este plano cobre o essencial de matemática para ML de maneira aprofundada. A abordagem prioriza conceitos aplicados, com exercícios práticos.
+
+🔗 **Dicas de Estudo:**
+- Resolver problemas reais (Kaggle, datasets públicos)
+- Utilizar NumPy, Pandas, Scikit-learn para experimentação
+- Criar visualizações para reforçar entendimento
+
+Agora, é colocar a mão na massa! 🚀
+
